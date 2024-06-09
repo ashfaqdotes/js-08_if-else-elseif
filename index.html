@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment - 8 IF.ELSE & ELSE IF STATEMENT</title>
+</head>
+<body>
+
+  <script>
+      //1. Write a program that takes a character (number or string) in a variable & checks
+      //  whether the given input is a number, uppercase letter or lower case letter.
+
+    var character = prompt('Write a number or string').charCodeAt(0)
+    if (character >= 65 & character <= 90) {
+        alert('the character is uppercase letter - ' + character)
+    }
+    else if (character >= 97 & character <= 122) {
+        alert('the character is lower case letter - ' + character)
+    }
+    else if (character >= 48 & character <= 57) {
+        alert('the character is a number - ' + character)
+    }
+    else {
+        alert('Special character or something else.')
+    }
+
+    //2. Write a JavaScript program that accept two integers and
+    // display the larger. Also show if the two integers are equal.
+    var number1 = +prompt('Enter 1st number')
+    var number2 = +prompt('Enter 2nd number')
+    if (number1 > number2) {
+        alert(number1 + ' is a larger number')
+    }
+    else if (number2 > number1) {
+        alert(number2 + ' is a larger number')
+    }
+    else if (number1 == number2) {
+        alert('Both numbers are equal!')
+    }
+    else {
+        alert('you did something wrong! Retry')
+    }
+
+    //3. Write a program that takes input a number from user &
+    // state whether the number is positive, negative or zero.
+    var num = +prompt('Enter a number')
+    if (num > 0) {
+        alert('The number is positive')
+    }
+    else if (num === 0) {
+        alert('The number is zero')
+    }
+    else if (num < 0) {
+        alert('The number is negative')
+    }
+    else {
+        alert('You did something wrong! Retry.')
+    }
+
+    //4. Write a program that takes a character (i.e. string of length 1)
+    //  and returns true if it is a vowel, false otherwise
+    var character4 = prompt('Enter a letter');
+    if (character4 === "a") {
+        alert('True, vowel = a')
+    }
+    else if (character4 === "e") {
+        alert('True, vowel = e')
+    }
+    else if (character4 === "i") {
+        alert('True, vowel = i')
+    }
+    else if (character4 === "o") {
+        alert('True, vowel = o')
+    }
+    else if (character4 === "u") {
+        alert('True, vowel = u')
+    }
+    else {
+        alert('false, no vowel found.')
+    }
+
+    // 5. Write a program that (see assignment 8 pdf)
+    var password = prompt('Create a password', 'password')
+    var enterPassword = prompt('Enter your password')
+    if (enterPassword === password) {
+        alert('Correct! The password you entered matches the original password')
+    }
+    else if (enterPassword !== password) {
+        alert('Incorrect password')
+    }
+    else {
+        alert('Please enter your password')
+    }
+    
+    //6. This if/else statement does not work. Try to fix it:
+    var greeting;
+    var hour = + prompt('Enter your time (in hour)')
+    if (hour < 18) {
+        greeting = "Good day";
+        alert(greeting)
+    }
+    else {
+        greeting = "Good evening";
+        alert(greeting)
+    }
+    
+    //7. Write a program that takes time as input from user in 24hours
+    //  clock format like: 1900 = 7pm. Implement the
+    // following case using if, else & else if statements
+
+    var time = +prompt('Enter your time in 24 hours clock format')
+    if (time === 1) {
+        alert("its 1AM o'clock")
+    }
+    else if (time === 2) {
+        alert("its 2AM o'clock")
+    }
+    else if (time === 3) {
+        alert("its 3AM o'clock")
+    }
+    else if (time === 4) {
+        alert("its 4AM o'clock")
+    }
+    else if (time === 5) {
+        alert("its 5AM o'clock")
+    }
+    else if (time === 6) {
+        alert("its 6AM o'clock")
+    }
+    else if (time === 7) {
+        alert("its 7AM o'clock")
+    }
+    else if (time === 8) {
+        alert("its 8AM o'clock")
+    }
+    else if (time === 9) {
+        alert("its 9AM o'clock")
+    }
+    else if (time === 10) {
+        alert("its 10AM o'clock")
+    }
+    else if (time === 11) {
+        alert("its 11AM o'clock")
+    }
+    else if (time === 12) {
+        alert("its 12AM o'clock")
+    }
+    else if (time === 13) {
+        alert("its 1PM o'clock")
+    }
+    else if (time === 14) {
+        alert("its 2PM o'clock")
+    }
+    else if (time === 15) {
+        alert("its 3PM o'clock")
+    }
+    else if (time === 16) {
+        alert("its 4PM o'clock")
+    }
+    else if (time === 17) {
+        alert("its 5PM o'clock")
+    }
+    else if (time === 18) {
+        alert("its 6PM o'clock")
+    }
+    else if (time === 19) {
+        alert("its 7PM o'clock")
+    }
+    else if (time === 20) {
+        alert("its 8PM o'clock")
+    }
+    else if (time === 21) {
+        alert("its 9PM o'clock")
+    }
+    else if (time === 22) {
+        alert("its 10PM o'clock")
+    }
+    else if (time === 23) {
+        alert("its 11PM o'clock")
+    }
+    else if (time === 24) {
+        alert("its 12AM o'clock")
+    }
+    else {
+        alert('Re-enter your time in 24 hours clock format')
+    }
+  </script>
+</body>
+</html>
